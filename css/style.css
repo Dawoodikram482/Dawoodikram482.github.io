@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+    list-style: none;
+    background-color: black;
+    color: #ffffff;
+}
+
+/* desktop */
+
+#header-menu {
+    background-color: rgb(171, 105, 238);
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-right: 20px;
+    line-height: 7em;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.active {
+    color: #ffffff;
+}
+
+#menu li a:hover {
+    color: #ffffff;
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+#logo {
+    margin: 10px 0 5px 10px;
+    width: 33%;
+}
+
+#header-menu h1,
+h2 {
+    margin: 5px 0 0 10px;
+}
+
+#promo-video {
+    display: block;
+    margin: 20px auto;
+    border-width: thick;
+    border-style: double;
+    border-color: #ffffff;
+}
+
+#flex-container {
+    display: flex;
+}
+
+#article-container figure {
+    float: right;
+}
+
+#article-container {
+    margin: 10px;
+    width: 75%;
+}
+
+#article-container article:not(:first-of-type) {
+    margin-top: 5%
+}
+
+#article-container figure img {
+    border-radius: 8px;
+    width: 300px;
+    height: 170px;
+}
+
+#articls-aside {
+    width: 25%;
+    margin: 10px;
+    padding: 25px;
+    background-color: #4c6333;
+    word-spacing: 4px;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+#cookie-stat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    margin: 10px;
+    background-color: #FA0;
+    opacity: 50%;
+    color: #FFF;
+}
+
+#footer {
+    background-color: #b666ec;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+/* Tab */
+
+@media (max-width: 798px) {
+    #article-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #article-container article:not(:last-of-type) {
+        margin-top: 5%
+    }
+
+    #article-container figure {
+        float: left;
+        margin-right: 10px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #articls-aside {
+        width: 98%;
+    }
+
+    #article-container {
+        width: 98%;
+    }
+
+    #article-container article {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #article-container figure img {
+        width: 100%;
+    }
+
+}
