@@ -19,6 +19,20 @@ body {
 
 /* desktop */
 
+#article-container article p::first-letter {
+    font-size: 25px;
+}
+
+#article-container article p {
+    text-indent: 2%;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+#article-container article a:visited {
+    color: #96b99e;
+}
+
 #header-menu {
     background-color: #84A98C;
     height: 120px;
@@ -42,7 +56,9 @@ body {
 }
 
 .active {
-    color: #ffffff;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #ham-icon {
@@ -114,6 +130,8 @@ h2 {
     word-spacing: 4px;
     line-height: 30px;
     letter-spacing: 0px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 #cookie-stat {
@@ -125,6 +143,7 @@ h2 {
     background-color: #FA0;
     opacity: 50%;
     color: #FFF;
+    z-index: 9999;
 }
 
 #footer {
@@ -242,8 +261,7 @@ td {
     padding: 10px;
 }
 
-
-#price-aside {
+#price-table+#price-aside {
     margin: 10px;
 }
 
@@ -327,7 +345,7 @@ td {
         flex-direction: column;
     }
 
-    #price-price-overview {
+    #price-overview {
         width: 96%;
     }
 
@@ -336,7 +354,8 @@ td {
         overflow: auto;
     }
 
-    #price-aside {
+    /* #price-aside { */
+    #price-table+#price-aside {
         width: 96%;
     }
 
