@@ -128,6 +128,127 @@ h2 {
     padding: 10px;
 }
 
+#info {
+    padding: 10px;
+    margin: 10px;
+}
+
+#info ul {
+    list-style: none;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#contact-form {
+    margin: 10px;
+    width: 75%;
+}
+
+#form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-fields input,
+textarea {
+    padding: 10px;
+    margin: 10px
+}
+
+#form-fields label {
+    margin: 10px 12px;
+}
+
+#form-fields input[type="submit"] {
+    cursor: pointer;
+    background-color: #84A98C;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form-fields input[type="submit"]:hover {
+    background-color: #96b99e;
+}
+
+#contact-aside {
+    margin: 10px;
+}
+
+#contact-aside ul {
+    list-style: none;
+}
+
+#contact-aside ul li img {
+    width: 200px;
+    margin: 12px;
+}
+
+#price-container {
+    display: flex;
+}
+
+#price-overview {
+    margin: 10px;
+}
+
+#price-table {
+    width: 75%;
+    margin: 10px;
+}
+
+#price-table table {
+    width: 100%;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+#price-table table tr,
+td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+
+#price-table table tbody tr:nth-child(even) {
+    background-color: #CFF;
+    color: black;
+}
+
+#price-table table tbody tr:nth-child(odd) {
+    background-color: #FFF;
+    color: black;
+}
+
+#price-table table td:first-child {
+    color: #FF0;
+}
+
+#price-table table thead>tr {
+    background-color: #84A98C;
+}
+
+#price-table table tr td {
+    padding: 10px;
+}
+
+
+#price-aside {
+    margin: 10px;
+}
+
+#price-aside ul {
+    list-style: none;
+}
+
+#price-aside ul li img {
+    width: 200px;
+    margin: 12px;
+}
+
 /* Tab */
 
 @media (max-width: 798px) {
@@ -143,6 +264,39 @@ h2 {
     #article-container figure {
         float: left;
         margin-right: 10px;
+    }
+
+    #price-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #price-price-overview {
+        width: 96%;
+    }
+
+    #price-table {
+        width: 97%;
+        overflow: auto;
+    }
+
+    #price-aside {
+        width: 96%;
+    }
+
+    #price-aside ul {
+        display: flex;
+        gap: 10px;
+    }
+    
+    #price-aside ul li:first-child {
+        display: none;
+    }
+
+    #price-aside ul li img {
+        width: 90%;
+        border-radius: 10px;
+        height: 160px;
     }
 
 }
@@ -196,10 +350,10 @@ h2 {
         gap: 10px;
         padding: 20px;
         position: relative;
-        background: red;
+        background: #96b99e;
         top: 100%;
         right: 100%;
-        width: 199%;        
+        width: 199%;
         line-height: 7em;
     }
 
@@ -214,6 +368,21 @@ h2 {
         display: block;
     }
 
+    #contact-container {
+        flex-direction: column;
+    }
+
+    #contact-form {
+        width: 96%;
+    }
+
+    #contact-aside {
+        width: 96%;
+    }
+
+    #contact-aside ul li img {
+        width: 95%;
+    }
 
 
 }
