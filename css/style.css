@@ -9,6 +9,12 @@ body {
     list-style: none;
     background-color: #354F52;
     color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Notable";
+    src: url('../font/Notable-Regular.ttf');
 }
 
 /* desktop */
@@ -225,6 +231,7 @@ td {
 
 #price-table table td:first-child {
     color: #FF0;
+    font-family: 'Notable';
 }
 
 #price-table table thead>tr {
@@ -247,6 +254,55 @@ td {
 #price-aside ul li img {
     width: 200px;
     margin: 12px;
+}
+
+#prod-aside {
+    margin: 10px;
+}
+
+#prod-article {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+
+#prod-article article {
+    margin: 5px 0;
+}
+
+#article1 {
+    grid-row: 1 / 3;
+}
+
+#article2 {
+    grid-row: 1 / 9;
+}
+
+#article3 {
+    grid-row: 1 / 5;
+}
+
+#article4 {
+    grid-row: 3 / 10;
+}
+
+#article5 {
+    grid-row: 5 / 9;
+}
+
+#article6 {
+    grid-column: 2 / 4;
+}
+
+#prod-aside ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#prod-aside img {
+    height: 300px;
 }
 
 /* Tab */
@@ -288,7 +344,7 @@ td {
         display: flex;
         gap: 10px;
     }
-    
+
     #price-aside ul li:first-child {
         display: none;
     }
@@ -297,6 +353,41 @@ td {
         width: 90%;
         border-radius: 10px;
         height: 160px;
+    }
+
+
+
+    #article1 {
+        grid-row: 1 / 3;
+    }
+
+    #article2 {
+        grid-row: 1 / 12;
+    }
+
+    #article3 {
+        grid-row: 3 / 36
+    }
+
+    #article4 {
+        display: none;
+    }
+
+    #article5 {
+        grid-row: 12 / span 24;
+    }
+
+    #article6 {
+        grid-row: 37 / span 12;
+        grid-column: 3 / 1;
+    }
+
+    #prod-aside img {
+        height: 215px;
+    }
+
+    #prod-aside ul li:last-child {
+        display: none;
     }
 
 }
@@ -382,6 +473,55 @@ td {
 
     #contact-aside ul li img {
         width: 95%;
+    }
+
+    #article1 {
+        grid-row: 4 / 4;
+    }
+
+    #article2 {
+        grid-row: 5 / 5;
+    }
+
+    #article3 {
+        grid-row: 3 / 3;
+        display: block;
+    }
+
+    #article4 {
+        grid-row: 1 / 3;
+        display: block;
+    }
+
+    #article5 {
+        display: none;
+    }
+
+    #article6 {
+        display: none;
+    }
+
+    #prod-article {
+        display: grid;
+        grid-template-columns: auto 30%;
+    }
+
+    #prod-aside ul {
+        display: block;
+    }
+
+    #prod-aside img {
+        height: 215px;
+        width: 95%;
+        margin: 5px;
+    }
+
+    #prod-aside ul li:last-child {
+        display: block;
+    }
+
+    #prod-aside {
+        width: 99%;
     }
 
 

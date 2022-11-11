@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Sportech, Sports Technology, innovation, Tecnology evolution, sports tech trends">
     <meta name="description"
         content="Sportech is a website that explains about innovation in sports tecnology, products used in it, how they work, their effect and benefit of usage and where to fidn them">
@@ -13,34 +14,41 @@
 </head>
 
 <body>
-    <header>
-        <img src="./logo/spotech.svg" title= "logo" alt="sportech word written with two orange slashes at start">
-        <h1>
-            Sportech
-        </h1>
-        <h2>
-            A look into innovation
-        </h2>
+    <header id="header-menu">
+        <section id="title-logo">
+          <img
+            src="./logo/spotech.svg"
+            id="logo"
+            title="logo"
+            alt="sportech word written with two orange slashes at start"
+          />
+          <h1>Sportech</h1>
+          <h2>A look into innovation</h2>
+        </section>
+        <input type="checkbox" id="ham-check" />
+        <label for="ham-check" class="ham-button">
+          <img src="./image/ham.png" id="ham-icon" alt="hamburger menu image" />
+        </label>
         <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Homepage</a>
-                </li>
-                <li>
-                    <a href="./product.html">Product</a>
-                </li>
-                <li>
-                    <a href="./pricing.html">Pricing</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
+          <ul id="menu">
+            <li>
+              <a href="./index.html" id="active">Home</a>
+            </li>
+            <li>
+              <a href="./product.html">Product</a>
+            </li>
+            <li>
+              <a href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </nav>
-    </header>
-    <section>
-        <section>
-            <article>
+      </header>
+    <section id="product-row">
+        <section id="prod-article">
+            <article id="article1">
                 <header>
                     <h3>Football Headset</h3>
                 </header>
@@ -54,7 +62,7 @@
                     games against the NFL), coaches can be seen pacing the sideline while wearing headsets
                 </p>
             </article>
-            <article>
+            <article id="article2">
                 <header>
                     <h3>
                         Benefit of using headset
@@ -70,7 +78,7 @@
                     performing their duties.
                 </p>
             </article>
-            <article>
+            <article id="article3">
                 <header>
                     <h3>
                         How to use the headset
@@ -85,7 +93,7 @@
                     field, they typically have a playbook in mind, so communication tends to build off of that strategy.
                 </p>
             </article>
-            <article>
+            <article id="article4">
                 <header>
                     <h3>
                         Who uses these headsets
@@ -102,7 +110,7 @@
                     play, headset communication sped up the action on the field.
                 </p>
             </article>
-            <article>
+            <article id="article5">
                 <header>
                     <h3>What does this product offers you</h3>
                 </header>
@@ -119,7 +127,7 @@
                     noise reduction. In aviation headsets, Bose has used active noise cancellation for a long time.
                 </p>
             </article>
-            <article>
+            <article id="article6">
                 <header>
                     <h3>
                         The future of investing in football headsets
@@ -138,29 +146,30 @@
                     </p>
             </article>
         </section>
-        <section>
+        <section id="prod-aside">
             <aside>
                     <ul>
                         <li>
                             <a href="https://www.inholland.nl/"><img src="./image/headset.jpg" title= "Football Headset" alt="image of a guy wearing a black headset and a skin cap with a book close to his face"></a>
                         </li>
                         <li>
-                            <a href="https://www.inholland.nl/"><img src="./image/heart rate monitor 1.jpeg" title="Heart rate monitor" alt="Image of a black heart rate monitor with polar written in it's center"></a>
+                            <a href="https://www.inholland.nl/"><img src="./image/heartratemonitor1.jpeg" title="Heart rate monitor" alt="Image of a black heart rate monitor with polar written in it's center"></a>
                         </li>
                         <li>
-                            <a href="https://www.inholland.nl/"><img src="./image/Radar-Gun1.jpeg" title="Radar Gun for baseball" alt="Picture of a radar gun on a stand in front of practice nets in which a guy is practicing with the baseball bat"></a>
+                            <a href="https://www.inholland.nl/"><img src="./image/RadarGun1.jpeg" title="Radar Gun for baseball" alt="Picture of a radar gun on a stand in front of practice nets in which a guy is practicing with the baseball bat"></a>
                         </li>
                     </ul>
             </aside>
         </section>
     </section>
-    <section>
+    <section id="cookie-stat">
         <h3>Cookie Card</h3>
-        <p>By using this website, you automatically accept that we use cookies. <a href="#">Read more</a></p>
+        <p>
+          By using this website, you automatically accept that we use cookies.
+          <a href="#">Read more</a>
+        </p>
         <button>Accept all</button>
-    </section>
-    <footer>
-        &copy; Mian Muhammad Dawood Ikram&#8482;	
-    </footer>
+      </section>
+      <footer id="footer">&copy; Mian Muhammad Dawood Ikram&#8482;</footer>
 </body>
 </html>
